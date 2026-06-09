@@ -1,0 +1,131 @@
+.order-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.order-card__label {
+  margin: 0 0 4px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.order-card__header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.order-card__id {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.order-card__summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.order-card__summary p {
+  margin: 0;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.order-card__summary strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-heading);
+  font-size: 15px;
+}
+
+.order-card__products {
+  display: grid;
+  gap: 12px;
+}
+
+.order-product {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+
+.order-product img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: white;
+}
+
+.order-product__content {
+  min-width: 0;
+}
+
+.order-product h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-product p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.order-product strong {
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .order-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .order-card__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .order-product {
+    grid-template-columns: 44px 1fr;
+  }
+
+  .order-product img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .order-product strong {
+    grid-column: 2;
+  }
+}

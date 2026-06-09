@@ -1,0 +1,151 @@
+.customer-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.customer-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: rgba(124, 58, 237, 0.12);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.customer-card__menu {
+  color: var(--text-muted);
+  font-weight: 800;
+}
+
+.customer-card__name {
+  margin: 0;
+  font-size: 18px;
+}
+
+.customer-card__email {
+  margin: -8px 0 4px;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.customer-card__info {
+  display: grid;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.customer-card__info p {
+  margin: 0;
+}
+
+.customer-card__actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.customer-card__actions a {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+.customer-card__info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer-card__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  filter: invert(39%) sepia(96%) saturate(2466%) hue-rotate(250deg) brightness(94%) contrast(94%);
+}
+
+.customer-card__link {
+  flex: 1;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.customer-card__link--detail {
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--accent);
+}
+
+.customer-card__link--orders {
+  background: var(--accent);
+  color: white;
+}
+
+.customer-card__link--detail:hover {
+  background: rgba(124, 58, 237, 0.16);
+}
+
+.customer-card__link--orders:hover {
+  background: var(--accent-hover);
+  color: white;
+}
+
+
+@media (max-width: 640px) {
+  .customer-card {
+    padding: 16px;
+    border-radius: 16px;
+    gap: 12px;
+  }
+
+  .customer-card__avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    font-size: 14px;
+  }
+
+  .customer-card__name {
+    font-size: 25px;
+  }
+
+  .customer-card__email,
+  .customer-card__info {
+    font-size: 16px;
+  }
+
+  .customer-card__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .customer-card__actions {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .customer-card__link {
+    width: 100%;
+    padding: 11px 12px;
+  }
+}

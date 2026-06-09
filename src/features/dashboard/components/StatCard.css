@@ -1,0 +1,140 @@
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.stat-card__icon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(124, 58, 237, 0.12);
+  font-size: 24px;
+}
+
+.stat-card__content {
+  min-width: 0;
+}
+
+.stat-card__title {
+  margin: 0 0 4px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stat-card__value {
+  display: block;
+  color: var(--text-heading);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-card__trend {
+  margin: 8px 0 0;
+  color: var(--success);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.stat-card__icon {
+  width: 52px;
+  height: 52px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(124, 58, 237, 0.12);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.stat-card__content {
+  min-width: 0;
+}
+
+.stat-card__title {
+  margin: 0 0 4px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stat-card__value {
+  display: block;
+  color: var(--text-heading);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-card__icon {
+  filter: invert(39%) sepia(96%) saturate(2466%) hue-rotate(250deg) brightness(94%) contrast(94%);
+}
+
+@media (max-width: 640px) {
+  .stat-card {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .stat-card__icon {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .stat-card__title {
+    font-size: 12px;
+  }
+
+  .stat-card__value {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .stat-card {
+    gap: 12px;
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .stat-card__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  .stat-card__title {
+    font-size: 12px;
+  }
+
+  .stat-card__value {
+    font-size: 22px;
+  }
+
+  .stat-card__trend {
+    font-size: 11px;
+  }
+}
