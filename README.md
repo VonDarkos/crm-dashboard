@@ -1,73 +1,120 @@
-# React + TypeScript + Vite
+# CRM Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CRM Dashboard built with React, TypeScript and React Router.
 
-Currently, two official plugins are available:
+🌐 Live Demo: https://friendly-hamster-cd0697.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+CRM Dashboard is a responsive frontend application designed to manage customers and orders through a clean and modern interface.
 
-## Expanding the ESLint configuration
+The project uses real API data and includes customer management, order tracking, dynamic routing, URL filters, reusable components and responsive layouts.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Dashboard with key statistics
+- Recent customers section
+- Recent orders section
+- Customers list
+- Customer detail page
+- Orders list
+- Customer → Orders relationship
+- Search and sorting with URL Search Params
+- Loading and error states
+- Responsive design
+- Real API integration
+- React Router navigation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- React Router
+- Fetch API
+- CSS
+
+---
+
+## API
+
+Data is fetched from:
+
+- DummyJSON Users API
+- DummyJSON Carts API
+
+---
+
+## Installation
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+---
+
+## Screenshots
+
+### Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+### Customers
+
+![Customers](./screenshots/customers.png)
+
+### Orders
+
+![Orders](./screenshots/orders.png)
+
+---
+
+## Project Structure
+
+```txt
+src
+├── components
+├── features
+│   ├── customers
+│   ├── orders
+│   └── dashboard
+├── pages
+├── services
+├── hooks
+└── types
+```
+
+---
+
+## What I Learned
+
+Through this project I practiced:
+
+- React Router
+- TypeScript
+- API integration
+- Custom Hooks
+- URL Search Params
+- Component architecture
+- Responsive Design
+- State management with React Hooks
+- Feature-based project structure
+
+---
+
+## Author
+
+Developed by Marcos Baldanzi
